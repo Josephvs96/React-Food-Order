@@ -10,7 +10,7 @@ const AvaiableMeals = () => {
 
 	useEffect(() => {
 		fetch(
-			'https://reactdemo-e505b-default-rtdb.europe-west1.firebasedatabase.app/meals.json'
+			'FIREBASE_DATABASE_API_URL'
 		)
 			.then((response) => {
 				if (!response.ok) {
