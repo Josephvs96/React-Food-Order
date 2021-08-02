@@ -43,7 +43,7 @@ const Cart = (props) => {
 	const submitOrderHandler = async (userData) => {
 		setIsSubmitting(true);
 		await fetch(
-			'https://reactdemo-e505b-default-rtdb.europe-west1.firebasedatabase.app/oreders.json',
+			'FIREBASE_DATABASE_API_URL',
 			{
 				method: 'POST',
 				body: JSON.stringify({
